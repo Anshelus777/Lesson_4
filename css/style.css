@@ -4,6 +4,39 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel:regular,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700&display=swap");
 
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Evanston Tavern 1919";
+	src: url("../fonts/EvanstonTavern-1919Medium.woff2") format("woff2"),
+		url("../fonts/EvanstonTavern-1919Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -34,6 +67,7 @@ img {
 	vertical-align: top;
 }
 body {
+	line-height: 1;
 }
 
 .title {
@@ -44,12 +78,19 @@ body {
 	margin-left: 20px;
 	margin-top: 35px;
 	margin-bottom: 35px;
+	line-height: 100%;
+	letter-spacing: 7px;
+	word-spacing: 10px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-shadow: 10px 1px 10px rgb(145, 35, 35);
 }
 
 .date {
 	margin-left: 35px;
 	font-size: 17px;
 	color: darkgreen;
+	white-space: nowrap;
 }
 
 nav {
@@ -57,6 +98,11 @@ nav {
 	margin-bottom: 40px;
 	margin-left: 35px;
 	margin-top: 7px;
+	white-space: nowrap;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	font-style: italic;
+	text-decoration: underline;
 }
 
 .menu__link {
@@ -64,9 +110,11 @@ nav {
 }
 
 .block,
-.text {
+.text,
+.text__paragraph {
 	font-size: 22px;
 	margin-left: 25px;
+	text-align: justify;
 }
 
 h2 {
@@ -76,16 +124,29 @@ h2 {
 	margin-left: 20px;
 	margin-top: 35px;
 	margin-bottom: 15px;
+	letter-spacing: 5px;
+	text-shadow: 10px 1px 10px rgb(23, 152, 175);
 }
 
 .block {
 	color: darkred;
 	font-family: Pacifico;
+	text-indent: 30px;
 }
 
 .text {
 	color: darkslateblue;
 	font-family: Comfortaa;
+	text-indent: 30px;
+}
+
+.text__paragraph {
+	font-family: EvanstonTavern;
+	color: rgb(231, 96, 175);
+	font-family: Comfortaa;
+	text-indent: 30px;
+	font-weight: 1000;
+	font-style: italic;
 }
 
 img {
@@ -98,4 +159,16 @@ img {
 	font-size: 20px;
 	font-weight: 500;
 	color: burlywood;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+div.wrapper span.text {
+	text-decoration: overline;
+}
+
+span.text a {
+	text-decoration: underline;
 }

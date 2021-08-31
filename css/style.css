@@ -70,6 +70,10 @@ body {
 	line-height: 1;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .title {
 	font-family: Cinzel;
 	font-size: 45px;
